@@ -132,3 +132,5 @@ DATABASES['default'].update(db_from_env)
 
 #Activate Django-Heroku
 # django_heroku.settings(locals())
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
